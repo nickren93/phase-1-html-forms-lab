@@ -11,38 +11,46 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
+    <form method="POST">
 
       <!-- Add a label for 'fullname'-->
-
+      <label for="fullname">Full Name</label>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
-
+      <input type="text" id="fullname" name="Full-Name" placeholder="Enter Name" required/>
 
       <!-- Add a label for 'email'-->
-
+      <label for="email">Email Address</label>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      <input type="email" id="email" name="email" placeholder="Enter Email" required/>
 
       <!-- Add a label for 'phone'-->
-
+      <label for="phone">Telephone Number</label>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)"/>
 
       <!-- Add a label for 'message'-->
-
+      <!--<label for="message">Message</label><br>-->
+      <h4>Message:</h4>
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea>
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <h4>What is your age range:</h4>
+      <input type="checkbox" name="10-19" value="10-19"/> 10 - 19 <br>
+      <input type="checkbox" name="20-29" value="20-29"/> 20 - 29 <br>
+      <input type="checkbox" name="30-39" value="30-39"/> 30 - 39 <br>
+      <input type="checkbox" name="40-49" value="40-49"/> 40 - 49 <br>
+      <input type="checkbox" name="50-59" value="50-59"/> 50 - 59 <br>
+      <input type="checkbox" name=">=60" value=">=60"/> >=60 <br>
 
       <!-- Add an input with the type set to 'submit' -->
-
+      <input type="submit" value="Submit">
+    </form>
     
   </body>
 </html>
